@@ -1,5 +1,6 @@
-sudo apt-get install stress -y
-sudo yum install stress -y
+sudo apt update
+sudo apt install stress-ng -y
 
-
-stress --cpu 2 --timeout 60
+date
+stress-ng --cpu 2 --timeout 300s
+date
